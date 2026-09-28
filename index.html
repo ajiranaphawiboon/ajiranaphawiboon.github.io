@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Abhisit Jiranaphawiboon (AJ), PhD candidate in economics at Stanford GSB, on the 2026-27 job market.">
+<title>Abhisit Jiranaphawiboon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow reading column; identity block (portrait + name + links) up top, then JMP as the featured item, then research and references. */
+:root {
+  --bg: #ffffff;
+  --fg: #1c2124;
+  --muted: #5b6468;
+  --rule: #e3e6e8;
+  --accent: #8c1c24;        /* deep cardinal, used sparingly */
+  --panel: #f6f7f8;
+  --display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15181a; --fg: #e6e8e9; --muted: #9aa3a7; --rule: #2b3033;
+    --accent: #e2848a; --panel: #1d2124; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15181a; --fg: #e6e8e9; --muted: #9aa3a7; --rule: #2b3033;
+  --accent: #e2848a; --panel: #1d2124; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding-block: 56px 72px; display: grid; gap: 56px; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+a:hover { border-bottom-color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+/* Header */
+header { display: grid; grid-template-columns: 200px 1fr; gap: 36px; align-items: center; }
+.portrait {
+  width: 200px; aspect-ratio: 1 / 1; max-width: 100%;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 4px;
+  display: grid; place-items: center;
+  font-family: var(--display); font-size: 44px; color: var(--muted);
+}
+.portrait img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+h1 {
+  font-family: var(--display); font-weight: 500; font-size: 40px; line-height: 1.1;
+  margin: 0 0 6px; letter-spacing: -0.01em; text-wrap: balance;
+}
+.nick { color: var(--muted); font-family: var(--display); font-style: italic; font-size: 22px; font-weight: 400; }
+.role { margin: 10px 0 0; font-size: 17px; }
+.market {
+  display: inline-block; margin-top: 14px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); border: 1px solid currentColor; border-radius: 3px; padding: 3px 8px;
+}
+.links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 18px; font-weight: 500; font-size: 15px; }
+.email { margin-top: 12px; color: var(--muted); font-size: 15px; }
+.email code { font-family: var(--body); color: var(--fg); user-select: all; }
+
+/* Sections */
+section { display: grid; gap: 18px; }
+h2 {
+  font-family: var(--body); font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+  margin: 0; padding-bottom: 10px; border-bottom: 1px solid var(--rule);
+}
+p { margin: 0; max-width: 65ch; }
+
+.fields { display: flex; flex-wrap: wrap; gap: 8px; }
+.fields span { background: var(--panel); border-radius: 3px; padding: 3px 10px; font-size: 14px; }
+
+/* Job market paper */
+.jmp { display: grid; gap: 12px; }
+.jmp h3 {
+  font-family: var(--display); font-weight: 500; font-size: 27px; line-height: 1.2;
+  margin: 0; text-wrap: balance;
+}
+.jmp h3 a { color: var(--fg); border-bottom-color: var(--rule); }
+.jmp h3 a:hover { border-bottom-color: var(--fg); }
+.jmp .abstract { color: var(--fg); }
+.jmp .abstract strong { font-weight: 600; }
+.jmp-actions { display: flex; flex-wrap: wrap; gap: 10px 20px; font-size: 15px; font-weight: 500; }
+
+/* References */
+.refs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.ref { display: grid; gap: 2px; font-size: 15px; min-width: 0; }
+.ref b { font-family: var(--display); font-weight: 500; font-size: 19px; }
+.ref span { color: var(--muted); }
+.ref .mail { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--rule); padding-top: 18px; }
+
+@media (max-width: 620px) {
+  .wrap { padding-block: 32px 48px; gap: 44px; }
+  header { grid-template-columns: 1fr; gap: 20px; }
+  .portrait { width: 160px; }
+  h1 { font-size: 32px; }
+  .refs { grid-template-columns: 1fr; gap: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="portrait" aria-label="Portrait of Abhisit Jiranaphawiboon"><img src="photo.webp" alt="Abhisit Jiranaphawiboon"></div>
+    <div>
+      <h1>Abhisit Jiranaphawiboon <span class="nick">(AJ)</span></h1>
+    </div>
+  </header>
+</div>
+</body>
+</html>

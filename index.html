@@ -48,7 +48,8 @@ body {
 .research h3 { font-family: var(--heading); font-weight: 500; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
 .paper { font-size: 18px; margin: 0 0 2px; }
 .note { font-size: 17px; color: var(--fg); margin: 0 0 14px; }
-.paper a { font-weight: 500; }
+.paper .link { font-weight: 500; }
+.link { color: var(--link); }
 .award { color: var(--muted); font-style: italic; }
 .abstract .label { color: var(--link); }
 .abstract { font-size: 16px; line-height: 1.65; max-width: 68ch; margin: 0 0 14px; }
@@ -75,7 +76,7 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 .photo { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
 .refs { width: 100%; font-size: 17px; }
 .links { font-size: 17px; }
-.links a { white-space: nowrap; }
+.links .link { white-space: nowrap; }
 .links .sep { color: var(--fg); margin: 0 8px; }
 @media (max-width: 520px) {
   body { font-size: 16px; }
@@ -97,13 +98,13 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
   </div>
   <p class="bio">I am a PhD candidate in Economic Policy and Analysis at Stanford GSB and am on the 2026&ndash;27 job market. My research in urban economics studies the distributional impacts of local public goods, such as policing and public transit, on crime and residential welfare.</p>
   <p class="refs">References: Rebecca Diamond (primary), Lanier Benkard, and Stephen Redding</p>
-  <p class="links"><a href="#" id="cv-link">CV</a><span class="sep">|</span><a href="#" id="scholar-link">Google Scholar</a><span class="sep">|</span><a href="mailto:ajirana@stanford.edu">Email me</a></p>
+  <p class="links"><span class="link">CV</span><span class="sep">|</span><span class="link">Google Scholar</span><span class="sep">|</span><span class="link">Email me</span></p>
   </div>
 
   <div class="right">
   <section class="research" aria-labelledby="research-h">
     <h2 id="research-h">Job Market Paper</h2>
-    <p class="paper"><a href="#" id="jmp-link">Distributional Consequences of Police Allocation: Evidence from Chicago</a></p>
+    <p class="paper"><span class="link">Distributional Consequences of Police Allocation: Evidence from Chicago</span></p>
     <p class="note"><span class="award">Best Student Paper (Honorable Mention) at the 2026 Urban Economics Association North American Meeting</span></p>
     <p class="abstract"><span class="label">Abstract:</span> Municipal police deployment involves a fundamental location tradeoff: more patrol in one place means less elsewhere. I study the distributional consequences in Chicago using granular data, quasi-experimental variation, and a quantitative urban model. The observed allocation is consistent with a dual objective of crime minimization and land value maximization, generating disproportionate patrol in high-income neighborhoods. Shifting toward pure crime minimization reduces citywide crime but hurts every resident type. In neighborhoods gaining police, rising rents erode welfare gains for residents with the lowest willingness to pay for crime reduction; in neighborhoods losing police, higher crime compounds losses for those with the highest willingness to pay. A modest reallocation toward neighborhoods with high marginal valuation of crime reduction improves welfare for all types. Shifting the citywide police level creates limited welfare gains, pointing to reallocation as the main policy lever.</p>
   </section>
@@ -111,14 +112,14 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
   <section class="research more" aria-labelledby="more-h">
     <h2 id="more-h">Research</h2>
     <div class="item">
-      <p class="paper"><a href="#" id="transit-link">Public Transit Expansion and Crime: Evidence from Chicago</a> <span class="status">New draft coming soon!</span></p>
+      <p class="paper"><span class="link">Public Transit Expansion and Crime: Evidence from Chicago</span> <span class="status">New draft coming soon!</span></p>
       <details class="abs">
         <summary>[Abstract]</summary>
         <p>Public transit expansions often face resistance from residents concerned about the potential spread of crime into their neighborhoods. To assess these concerns, I leverage a granular dataset from the Chicago Police Department that links crime incidents to offenders&rsquo; home addresses. Using variation in travel costs induced by a train shutdown, I document a short-run decline in downtown property crime committed by offenders affected by the shutdown. To study the distributional impacts, I develop a spatial equilibrium model of residential and workplace location choices that features interactions between offenders and workers. In a counterfactual train line expansion, I find that while offenders relocate near the extended line, the resulting increase in property crime is localized and propagates only minimally to other parts of the city.</p>
       </details>
     </div>
     <div class="item">
-      <p class="paper"><a href="#" id="immig-link">The Contribution of High-Skilled Immigrants to Innovation in the United States</a></p>
+      <p class="paper"><span class="link">The Contribution of High-Skilled Immigrants to Innovation in the United States</span></p>
       <p class="meta">With Shai Bernstein, Rebecca Diamond, Tim McQuade, and Beatriz Pousada</p>
       <p class="meta"><em>Conditionally accepted, American Economic Review</em></p>
       <details class="abs">
